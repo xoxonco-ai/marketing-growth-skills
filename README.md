@@ -1,6 +1,6 @@
 # Marketing Growth Skills
 
-「Marketing & Growth」與「AAS Marketing, SEO & Growth」兩個主題包，來源為 [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills) v18.9.0（MIT 授權，見 `LICENSE`）。
+「Marketing & Growth」、「AAS Marketing, SEO & Growth」與「Creative Director」三個主題包，來源為 [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills) v18.9.0（MIT 授權，見 `LICENSE`）。
 
 技能放在 `.claude/skills/`，用 Claude Code 開啟這個倉庫時會自動載入。
 
@@ -17,6 +17,11 @@
 | `schema-markup` | schema.org 結構化資料設計與驗證 |
 | `seo-content-planner` | SEO 內容大綱與主題群集 |
 | `seo-fundamentals` | SEO 基礎：E-E-A-T、Core Web Vitals（附 SEO 檢查腳本） |
+| `algorithmic-art` | 用 p5.js 生成演算法藝術 |
+| `canvas-design` | 海報、視覺設計稿（附 OFL 授權字型） |
+| `copy-editing` | 行銷文案校稿與改寫 |
+| `frontend-design` | 在既有品牌規範內設計前端介面 |
+| `interactive-portfolio` | 能帶來工作與客戶的作品集網站 |
 
 ## 更新
 
@@ -25,4 +30,5 @@ git clone --depth 1 https://github.com/sickn33/agentic-awesome-skills.git /tmp/a
 rm -rf .claude/skills && mkdir -p .claude/skills
 cp -r /tmp/aas/plugins/agentic-bundle-marketing-growth/skills/* .claude/skills/
 cp -r /tmp/aas/plugins/agentic-bundle-aas-marketing-seo-growth/skills/* .claude/skills/
+cp -r /tmp/aas/plugins/agentic-bundle-creative-director/skills/* .claude/skills/
 ```
