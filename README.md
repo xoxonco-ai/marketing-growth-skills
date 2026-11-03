@@ -1,9 +1,9 @@
 # Marketing Growth Skills
 
-四個主題包，來源為 [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills)（MIT 授權，見 `LICENSE`）：
+五個主題包，來源為 [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills)（MIT 授權，見 `LICENSE`）：
 
 - 「Marketing & Growth」、「AAS Marketing, SEO & Growth」、「Creative Director」：v18.9.0
-- 「AAS Web App Builder」：v20.4.0
+- 「AAS Web App Builder」、「AAS Secure App Builder」：v20.4.0
 
 技能放在 `.claude/skills/`，用 Claude Code 開啟這個倉庫時會自動載入。
 
@@ -42,6 +42,18 @@
 | `typescript-expert` | TypeScript 型別設計與效能（附本機 `tsc` 診斷腳本） |
 | `ui-a11y` | 稽核並修正元件或頁面的無障礙問題 |
 | `ui-states` | 首次使用、空白、載入、錯誤、離線等 UI 狀態 |
+| `api-security-best-practices` | 安全的 API 設計：驗證、授權、輸入檢查 |
+| `auth-implementation-patterns` | 實作或審查身分驗證與授權（token、session、資源權限） |
+| `backend-security-coder` | 後端安全程式碼：輸入驗證、驗證機制 |
+| `cc-skill-security-review` | 安全實務與潛在漏洞審查 |
+| `dependency-management-deps-audit` | 相依套件漏洞掃描與授權合規 |
+| `django-access-review` | Django／DRF 存取控制與 IDOR 審查 |
+| `frontend-security-coder` | 前端安全：XSS 防護、輸出淨化 |
+| `pci-compliance` | 支付資料流程與 PCI 範圍控制審查 |
+| `sast-configuration` | 靜態安全掃描（SAST）工具設定與自訂規則 |
+| `secrets-management` | CI/CD 機密管理：Vault、AWS Secrets Manager 等 |
+| `security-requirement-extraction` | 從威脅模型推導安全需求 |
+| `threat-modeling-expert` | 威脅建模、安全架構審查、風險評估 |
 
 ## 更新
 
@@ -55,6 +67,7 @@ cp -r /tmp/aas-v18/plugins/agentic-bundle-marketing-growth/skills/* .claude/skil
 cp -r /tmp/aas-v18/plugins/agentic-bundle-creative-director/skills/* .claude/skills/
 cp -r /tmp/aas/plugins/agentic-bundle-aas-marketing-seo-growth/skills/* .claude/skills/
 cp -r /tmp/aas/plugins/agentic-bundle-web-app/skills/* .claude/skills/
+cp -r /tmp/aas/plugins/agentic-bundle-aas-secure-app-builder/skills/* .claude/skills/
 python scripts/validate_skills.py
 ```
 
