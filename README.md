@@ -1,9 +1,9 @@
 # Marketing Growth Skills
 
-五個主題包，來源為 [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills)（MIT 授權，見 `LICENSE`）：
+六個主題包，來源為 [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills)（MIT 授權，見 `LICENSE`）：
 
 - 「Marketing & Growth」、「AAS Marketing, SEO & Growth」、「Creative Director」：v18.9.0
-- 「AAS Web App Builder」、「AAS Secure App Builder」：v20.4.0
+- 「AAS Web App Builder」、「AAS Secure App Builder」、「AAS Mobile App Builder」：v20.4.0
 
 技能放在 `.claude/skills/`，用 Claude Code 開啟這個倉庫時會自動載入。
 
@@ -54,6 +54,24 @@
 | `secrets-management` | CI/CD 機密管理：Vault、AWS Secrets Manager 等 |
 | `security-requirement-extraction` | 從威脅模型推導安全需求 |
 | `threat-modeling-expert` | 威脅建模、安全架構審查、風險評估 |
+| `app-store-optimization` | App Store／Google Play 上架優化（附 8 個離線 Python 分析腳本） |
+| `expo-api-routes` | Expo Router API 路由（EAS Hosting） |
+| `expo-cicd-workflows` | EAS 工作流程 YAML 撰寫與驗證（腳本會下載 Expo 官方 schema） |
+| `expo-deployment` | 用 EAS 建置、送審 iOS／Android，部署網頁與 API 路由 |
+| `expo-dev-client` | Expo 開發用客戶端建置 |
+| `expo-tailwind-setup` | 在 Expo 設定 Tailwind CSS v4 與 NativeWind v5 |
+| `flutter-expert` | Flutter 跨平台開發 |
+| `hig-components-layout` | Apple HIG：版面與導覽元件 |
+| `hig-components-system` | Apple HIG：小工具、即時動態、通知等系統元件 |
+| `hig-foundations` | Apple HIG：色彩、字體、圖示等基礎 |
+| `hig-inputs` | Apple HIG：觸控、鍵盤、指標、Pencil 等輸入方式 |
+| `hig-patterns` | Apple HIG：常見互動模式 |
+| `hig-platforms` | Apple HIG：各平台差異 |
+| `ios-developer` | iOS 原生開發（Swift／SwiftUI） |
+| `ios-screens` | 原生手感的 iPhone 畫面：導覽、Sheet、動態字級、深色模式 |
+| `mobile-developer` | React Native、Flutter 或原生行動開發 |
+| `multi-platform-apps-multi-platform` | 同一功能在網頁、行動、桌面一致實作 |
+| `react-native-architecture` | React Native／Expo 架構：導覽、狀態、原生模組、離線 |
 
 ## 更新
 
@@ -68,6 +86,7 @@ cp -r /tmp/aas-v18/plugins/agentic-bundle-creative-director/skills/* .claude/ski
 cp -r /tmp/aas/plugins/agentic-bundle-aas-marketing-seo-growth/skills/* .claude/skills/
 cp -r /tmp/aas/plugins/agentic-bundle-web-app/skills/* .claude/skills/
 cp -r /tmp/aas/plugins/agentic-bundle-aas-secure-app-builder/skills/* .claude/skills/
+cp -r /tmp/aas/plugins/agentic-bundle-aas-mobile-app-builder/skills/* .claude/skills/
 python scripts/validate_skills.py
 ```
 

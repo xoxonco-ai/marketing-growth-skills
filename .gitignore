@@ -1,0 +1,4 @@
+# Files skills create when they run
+node_modules/
+.cache/
+__pycache__/
