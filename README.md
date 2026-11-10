@@ -1,9 +1,9 @@
 # Marketing Growth Skills
 
-十一個主題包，來源為 [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills)（MIT 授權，見 `LICENSE`）：
+十二個主題包，來源為 [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills)（MIT 授權，見 `LICENSE`）：
 
 - 「Marketing & Growth」、「AAS Marketing, SEO & Growth」、「Creative Director」：v18.9.0
-- 「AAS Web App Builder」、「AAS Secure App Builder」、「AAS Mobile App Builder」、「AAS SaaS Launch & Revenue」、「AAS Automation Builder」、「AAS Documents & Presentations」、「AAS Data Analytics & Business Intelligence」、「AAS QA & Test Automation」：v20.4.0
+- 「AAS Web App Builder」、「AAS Secure App Builder」、「AAS Mobile App Builder」、「AAS SaaS Launch & Revenue」、「AAS Automation Builder」、「AAS Documents & Presentations」、「AAS Data Analytics & Business Intelligence」、「AAS QA & Test Automation」、「AAS DevOps & Cloud」：v20.4.0
 
 技能放在 `.claude/skills/`，用 Claude Code 開啟這個倉庫時會自動載入。
 
@@ -137,6 +137,22 @@
 | `test-fixing` | 分組找出並修好所有失敗的測試 |
 | `testing-patterns` | Jest 測試模式、工廠函式、mock |
 | `webapp-testing` | 用 Python Playwright 測試本機網頁應用 |
+| `aws-serverless` | AWS 無伺服器應用：Lambda、API Gateway |
+| `azd-deployment` | 用 azd 準備與驗證 Azure Container Apps 部署 |
+| `azure-ai-openai-dotnet` | .NET 版 Azure OpenAI SDK |
+| `azure-functions` | Azure Functions 與 Durable Functions 模式 |
+| `azure-identity-py` | Python 版 Azure 身分驗證 SDK |
+| `azure-monitor-opentelemetry-ts` | 用 OpenTelemetry 為 Node.js 加上 Azure Monitor 追蹤 |
+| `azure-search-documents-py` | Python 版 Azure AI Search：向量、混合、語意搜尋 |
+| `bash-linux` | Bash／Linux 終端機指令與腳本 |
+| `deployment-procedures` | 安全部署流程、回滾策略與驗證 |
+| `devops-troubleshooter` | DevOps 事故排查與可觀測性 |
+| `docker-expert` | Docker 容器化與最佳化 |
+| `environment-setup-guide` | 引導建立開發環境 |
+| `github-actions-templates` | GitHub Actions 測試、建置、部署範本 |
+| `incident-responder` | SRE 事故應變 |
+| `kubernetes-architect` | Kubernetes 架構與 GitOps（ArgoCD／Flux） |
+| `terraform-specialist` | Terraform／OpenTofu 基礎架構即程式碼 |
 
 ### 關於 Rube MCP
 
@@ -161,6 +177,7 @@ cp -r /tmp/aas/plugins/agentic-bundle-aas-automation-builder/skills/* .claude/sk
 cp -r /tmp/aas/plugins/agentic-bundle-aas-documents-presentations/skills/* .claude/skills/
 cp -r /tmp/aas/plugins/agentic-bundle-aas-data-analytics/skills/* .claude/skills/
 cp -r /tmp/aas/plugins/agentic-bundle-aas-qa-test-automation/skills/* .claude/skills/
+cp -r /tmp/aas/plugins/agentic-bundle-aas-devops-cloud/skills/* .claude/skills/
 python scripts/validate_skills.py
 ```
 
