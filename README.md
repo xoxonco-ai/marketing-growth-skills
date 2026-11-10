@@ -1,9 +1,9 @@
 # Marketing Growth Skills
 
-九個主題包，來源為 [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills)（MIT 授權，見 `LICENSE`）：
+十個主題包，來源為 [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills)（MIT 授權，見 `LICENSE`）：
 
 - 「Marketing & Growth」、「AAS Marketing, SEO & Growth」、「Creative Director」：v18.9.0
-- 「AAS Web App Builder」、「AAS Secure App Builder」、「AAS Mobile App Builder」、「AAS SaaS Launch & Revenue」、「AAS Automation Builder」、「AAS Documents & Presentations」：v20.4.0
+- 「AAS Web App Builder」、「AAS Secure App Builder」、「AAS Mobile App Builder」、「AAS SaaS Launch & Revenue」、「AAS Automation Builder」、「AAS Documents & Presentations」、「AAS Data Analytics & Business Intelligence」：v20.4.0
 
 技能放在 `.claude/skills/`，用 Claude Code 開啟這個倉庫時會自動載入。
 
@@ -111,6 +111,19 @@
 | `google-slides-automation` | 透過已授權的連接器讀寫 Google 簡報 |
 | `office-productivity` | 文件、試算表、簡報製作與 LibreOffice 整合 |
 | `pdf-conversion-router` | 依需求選擇工具，把 PDF 轉成 Markdown、HTML、DOCX 等格式 |
+| `business-analyst` | 商業分析、儀表板與資料驅動洞察 |
+| `claude-d3js-skill` | 用 d3.js 製作互動式資料視覺化（附 JSX 範本） |
+| `data-quality-frameworks` | 用 Great Expectations、dbt 測試與資料契約驗證資料品質 |
+| `data-storytelling` | 把原始資料轉成能推動決策的故事 |
+| `database-architect` | 資料層設計：技術選型、結構建模 |
+| `dbt-transformation-patterns` | dbt 模型組織、測試與文件 |
+| `kpi-dashboard-design` | 設計 KPI 儀表板（附唯讀 SQL 範例） |
+| `market-sizing-analysis` | TAM／SAM／SOM 市場規模估算 |
+| `postgres-best-practices` | Supabase 整理的 Postgres 效能與最佳實務 |
+| `sql-optimization-patterns` | 用查詢計畫診斷慢查詢並驗證索引調整 |
+| `sql-pro` | 現代 SQL：OLTP／OLAP 最佳化與進階查詢 |
+| `startup-financial-modeling` | 3–5 年新創財務模型：營收、成本、現金流 |
+| `startup-metrics-framework` | 依商業模式追蹤與計算新創關鍵指標 |
 
 ### 關於 Rube MCP
 
@@ -133,6 +146,7 @@ cp -r /tmp/aas/plugins/agentic-bundle-aas-mobile-app-builder/skills/* .claude/sk
 cp -r /tmp/aas/plugins/agentic-bundle-aas-saas-launch-revenue/skills/* .claude/skills/
 cp -r /tmp/aas/plugins/agentic-bundle-aas-automation-builder/skills/* .claude/skills/
 cp -r /tmp/aas/plugins/agentic-bundle-aas-documents-presentations/skills/* .claude/skills/
+cp -r /tmp/aas/plugins/agentic-bundle-aas-data-analytics/skills/* .claude/skills/
 python scripts/validate_skills.py
 ```
 
