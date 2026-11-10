@@ -1,9 +1,9 @@
 # Marketing Growth Skills
 
-七個主題包，來源為 [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills)（MIT 授權，見 `LICENSE`）：
+八個主題包，來源為 [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills)（MIT 授權，見 `LICENSE`）：
 
 - 「Marketing & Growth」、「AAS Marketing, SEO & Growth」、「Creative Director」：v18.9.0
-- 「AAS Web App Builder」、「AAS Secure App Builder」、「AAS Mobile App Builder」、「AAS SaaS Launch & Revenue」：v20.4.0
+- 「AAS Web App Builder」、「AAS Secure App Builder」、「AAS Mobile App Builder」、「AAS SaaS Launch & Revenue」、「AAS Automation Builder」：v20.4.0
 
 技能放在 `.claude/skills/`，用 Claude Code 開啟這個倉庫時會自動載入。
 
@@ -86,6 +86,29 @@
 | `saas-mvp-launcher` | 從零規劃與建置 SaaS MVP |
 | `stripe-integration` | Stripe 結帳、訂閱、Webhook、退款的實作與驗證 |
 | `usage-based-pricing` | 開發者看得懂、能預估的用量計費 |
+| `airtable-automation` | Airtable 紀錄、資料表、欄位、檢視（透過 Rube MCP） |
+| `api-integration` | 事件驅動架構、Webhook、API 串接、ETL 流程 |
+| `api-rate-limit-handler` | 處理 429／5xx 的限流、退避與重試 |
+| `github-automation` | GitHub Issue、PR、分支、檢查、工作流程（透過 Rube MCP） |
+| `google-calendar-automation` | 透過已授權的整合操作 Google 日曆 |
+| `googlesheets-automation` | Google 試算表讀寫、格式、篩選（透過 Rube MCP） |
+| `hubspot-automation` | HubSpot CRM：聯絡人、公司、交易、工單（透過 Rube MCP） |
+| `make-automation` | Make（Integromat）操作（透過 Rube MCP） |
+| `mcp-builder` | 建立 MCP 伺服器（附評估腳本，需 `anthropic`、`mcp` 套件與 API 金鑰） |
+| `n8n-workflow-patterns` | n8n 工作流程架構模式 |
+| `notion-automation` | Notion 頁面、資料庫、區塊、留言（透過 Rube MCP） |
+| `outlook-calendar-automation` | Outlook 日曆：建立活動、邀請、找會議時間（透過 Rube MCP） |
+| `sendgrid-automation` | SendGrid 行銷活動、聯絡人名單、寄送（透過 Rube MCP） |
+| `shopify-automation` | Shopify 商品、訂單、顧客、庫存（透過 Rube MCP） |
+| `slack-automation` | Slack 訊息、搜尋、頻道管理（透過 Rube MCP） |
+| `stripe-automation` | Stripe 顧客、訂閱、發票、退款（透過 Rube MCP） |
+| `workflow-automation` | 可靠的工作流程自動化與持久執行 |
+| `zapier-make-patterns` | Zapier 與 Make 無程式碼自動化模式 |
+| `zendesk-automation` | Zendesk 工單、使用者、回覆（透過 Rube MCP） |
+
+### 關於 Rube MCP
+
+標註「透過 Rube MCP」的技能是操作說明，本身不會連線。要實際使用，必須先把 `https://rube.app/mcp`（Composio 提供的第三方服務）加入 MCP 伺服器設定，並為每個服務（Slack、Notion、Stripe 等）完成 OAuth 授權。授權後 Composio 會取得該帳號在授權範圍內的存取權，請只授權需要的服務與權限。
 
 ## 更新
 
@@ -102,6 +125,7 @@ cp -r /tmp/aas/plugins/agentic-bundle-web-app/skills/* .claude/skills/
 cp -r /tmp/aas/plugins/agentic-bundle-aas-secure-app-builder/skills/* .claude/skills/
 cp -r /tmp/aas/plugins/agentic-bundle-aas-mobile-app-builder/skills/* .claude/skills/
 cp -r /tmp/aas/plugins/agentic-bundle-aas-saas-launch-revenue/skills/* .claude/skills/
+cp -r /tmp/aas/plugins/agentic-bundle-aas-automation-builder/skills/* .claude/skills/
 python scripts/validate_skills.py
 ```
 
