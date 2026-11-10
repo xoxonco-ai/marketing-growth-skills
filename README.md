@@ -1,9 +1,9 @@
 # Marketing Growth Skills
 
-六個主題包，來源為 [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills)（MIT 授權，見 `LICENSE`）：
+七個主題包，來源為 [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills)（MIT 授權，見 `LICENSE`）：
 
 - 「Marketing & Growth」、「AAS Marketing, SEO & Growth」、「Creative Director」：v18.9.0
-- 「AAS Web App Builder」、「AAS Secure App Builder」、「AAS Mobile App Builder」：v20.4.0
+- 「AAS Web App Builder」、「AAS Secure App Builder」、「AAS Mobile App Builder」、「AAS SaaS Launch & Revenue」：v20.4.0
 
 技能放在 `.claude/skills/`，用 Claude Code 開啟這個倉庫時會自動載入。
 
@@ -13,7 +13,7 @@
 | `analytics-tracking` | 設計與稽核追蹤埋點 |
 | `content-creator` | 依品牌語氣撰寫與檢查內容（附品牌語氣、SEO 分析腳本） |
 | `content-strategy` | 內容策略、主題群集、編輯路線圖 |
-| `email-sequence` | Email 自動化序列 |
+| `email-sequence` | Email 自動化序列（v20.4.0 版，含收件同意與寄送限制） |
 | `programmatic-seo` | 程式化 SEO 大量頁面 |
 | `seo-audit` | SEO 健檢：爬取、索引、排名 |
 | `copywriting` | 轉換導向的著陸頁與 Email 文案 |
@@ -72,6 +72,20 @@
 | `mobile-developer` | React Native、Flutter 或原生行動開發 |
 | `multi-platform-apps-multi-platform` | 同一功能在網頁、行動、桌面一致實作 |
 | `react-native-architecture` | React Native／Expo 架構：導覽、狀態、原生模組、離線 |
+| `analytics-product` | 產品分析：PostHog、Mixpanel、漏斗、留存、北極星指標（葡萄牙文） |
+| `competitive-landscape` | 競爭分析與差異化定位框架 |
+| `competitor-alternatives` | 競品比較頁與替代方案頁 |
+| `launch-strategy` | SaaS 產品上線與功能發表規劃 |
+| `micro-saas-launcher` | 獨立開發者快速推出小型 SaaS |
+| `monetization` | 數位產品變現：Stripe、訂閱、定價實驗（葡萄牙文） |
+| `onboarding-cro` | 使用者引導與啟用率優化 |
+| `pricing-strategy` | 依價值與付費意願設計定價與方案 |
+| `product-manager-toolkit` | 產品經理工具：探索到交付（附 RICE 排序、訪談分析兩個離線腳本） |
+| `product-marketing-context` | 建立可重複使用的產品行銷背景文件：定位、受眾、ICP |
+| `referral-program` | 推薦計畫與病毒式成長 |
+| `saas-mvp-launcher` | 從零規劃與建置 SaaS MVP |
+| `stripe-integration` | Stripe 結帳、訂閱、Webhook、退款的實作與驗證 |
+| `usage-based-pricing` | 開發者看得懂、能預估的用量計費 |
 
 ## 更新
 
@@ -87,6 +101,7 @@ cp -r /tmp/aas/plugins/agentic-bundle-aas-marketing-seo-growth/skills/* .claude/
 cp -r /tmp/aas/plugins/agentic-bundle-web-app/skills/* .claude/skills/
 cp -r /tmp/aas/plugins/agentic-bundle-aas-secure-app-builder/skills/* .claude/skills/
 cp -r /tmp/aas/plugins/agentic-bundle-aas-mobile-app-builder/skills/* .claude/skills/
+cp -r /tmp/aas/plugins/agentic-bundle-aas-saas-launch-revenue/skills/* .claude/skills/
 python scripts/validate_skills.py
 ```
 
