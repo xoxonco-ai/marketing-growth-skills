@@ -1,9 +1,9 @@
 # Marketing Growth Skills
 
-八個主題包，來源為 [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills)（MIT 授權，見 `LICENSE`）：
+九個主題包，來源為 [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills)（MIT 授權，見 `LICENSE`）：
 
 - 「Marketing & Growth」、「AAS Marketing, SEO & Growth」、「Creative Director」：v18.9.0
-- 「AAS Web App Builder」、「AAS Secure App Builder」、「AAS Mobile App Builder」、「AAS SaaS Launch & Revenue」、「AAS Automation Builder」：v20.4.0
+- 「AAS Web App Builder」、「AAS Secure App Builder」、「AAS Mobile App Builder」、「AAS SaaS Launch & Revenue」、「AAS Automation Builder」、「AAS Documents & Presentations」：v20.4.0
 
 技能放在 `.claude/skills/`，用 Claude Code 開啟這個倉庫時會自動載入。
 
@@ -22,7 +22,7 @@
 | `seo-fundamentals` | SEO 基礎：E-E-A-T、Core Web Vitals（附 SEO 檢查腳本） |
 | `algorithmic-art` | 用 p5.js 生成演算法藝術 |
 | `canvas-design` | 海報、視覺設計稿（附 OFL 授權字型） |
-| `copy-editing` | 行銷文案校稿與改寫 |
+| `copy-editing` | 行銷文案校稿與改寫（v20.4.0 版，不捏造數字與保證） |
 | `frontend-design` | 在既有品牌規範內設計前端介面 |
 | `interactive-portfolio` | 能帶來工作與客戶的作品集網站 |
 | `accessibility-compliance-accessibility-audit` | 依 WCAG 範圍稽核頁面與流程的無障礙 |
@@ -105,6 +105,12 @@
 | `workflow-automation` | 可靠的工作流程自動化與持久執行 |
 | `zapier-make-patterns` | Zapier 與 Make 無程式碼自動化模式 |
 | `zendesk-automation` | Zendesk 工單、使用者、回覆（透過 Rube MCP） |
+| `doc-coauthoring` | 引導式共同撰寫文件的流程 |
+| `google-docs-automation` | 透過已授權的連接器讀寫 Google 文件 |
+| `google-sheets-automation` | 透過已授權的連接器讀寫 Google 試算表 |
+| `google-slides-automation` | 透過已授權的連接器讀寫 Google 簡報 |
+| `office-productivity` | 文件、試算表、簡報製作與 LibreOffice 整合 |
+| `pdf-conversion-router` | 依需求選擇工具，把 PDF 轉成 Markdown、HTML、DOCX 等格式 |
 
 ### 關於 Rube MCP
 
@@ -126,6 +132,7 @@ cp -r /tmp/aas/plugins/agentic-bundle-aas-secure-app-builder/skills/* .claude/sk
 cp -r /tmp/aas/plugins/agentic-bundle-aas-mobile-app-builder/skills/* .claude/skills/
 cp -r /tmp/aas/plugins/agentic-bundle-aas-saas-launch-revenue/skills/* .claude/skills/
 cp -r /tmp/aas/plugins/agentic-bundle-aas-automation-builder/skills/* .claude/skills/
+cp -r /tmp/aas/plugins/agentic-bundle-aas-documents-presentations/skills/* .claude/skills/
 python scripts/validate_skills.py
 ```
 
