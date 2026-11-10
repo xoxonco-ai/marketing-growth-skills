@@ -1,9 +1,9 @@
 # Marketing Growth Skills
 
-十個主題包，來源為 [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills)（MIT 授權，見 `LICENSE`）：
+十一個主題包，來源為 [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills)（MIT 授權，見 `LICENSE`）：
 
 - 「Marketing & Growth」、「AAS Marketing, SEO & Growth」、「Creative Director」：v18.9.0
-- 「AAS Web App Builder」、「AAS Secure App Builder」、「AAS Mobile App Builder」、「AAS SaaS Launch & Revenue」、「AAS Automation Builder」、「AAS Documents & Presentations」、「AAS Data Analytics & Business Intelligence」：v20.4.0
+- 「AAS Web App Builder」、「AAS Secure App Builder」、「AAS Mobile App Builder」、「AAS SaaS Launch & Revenue」、「AAS Automation Builder」、「AAS Documents & Presentations」、「AAS Data Analytics & Business Intelligence」、「AAS QA & Test Automation」：v20.4.0
 
 技能放在 `.claude/skills/`，用 Claude Code 開啟這個倉庫時會自動載入。
 
@@ -124,6 +124,19 @@
 | `sql-pro` | 現代 SQL：OLTP／OLAP 最佳化與進階查詢 |
 | `startup-financial-modeling` | 3–5 年新創財務模型：營收、成本、現金流 |
 | `startup-metrics-framework` | 依商業模式追蹤與計算新創關鍵指標 |
+| `api-contract-testing` | 設計與審查 API 合約測試 |
+| `ci-cd-and-automation` | 建立與調整 CI/CD 流程 |
+| `code-review-checklist` | 程式碼審查清單：功能、安全、效能 |
+| `e2e-testing-patterns` | 可靠又快速的端對端測試 |
+| `k6-load-testing` | 用 k6 做 API、瀏覽器與擴充性負載測試 |
+| `playwright-skill` | 用 Playwright 跑瀏覽器自動化、截圖、登入流程測試（首次使用前需在技能資料夾執行 `npm run setup`） |
+| `python-testing-patterns` | pytest、fixture、mock 測試策略 |
+| `screen-reader-testing` | 用螢幕閱讀器測試網頁無障礙 |
+| `systematic-debugging` | 遇到錯誤或測試失敗時，先系統化找原因再修 |
+| `test-driven-development` | 先寫失敗的測試，再實作與重構 |
+| `test-fixing` | 分組找出並修好所有失敗的測試 |
+| `testing-patterns` | Jest 測試模式、工廠函式、mock |
+| `webapp-testing` | 用 Python Playwright 測試本機網頁應用 |
 
 ### 關於 Rube MCP
 
@@ -147,6 +160,7 @@ cp -r /tmp/aas/plugins/agentic-bundle-aas-saas-launch-revenue/skills/* .claude/s
 cp -r /tmp/aas/plugins/agentic-bundle-aas-automation-builder/skills/* .claude/skills/
 cp -r /tmp/aas/plugins/agentic-bundle-aas-documents-presentations/skills/* .claude/skills/
 cp -r /tmp/aas/plugins/agentic-bundle-aas-data-analytics/skills/* .claude/skills/
+cp -r /tmp/aas/plugins/agentic-bundle-aas-qa-test-automation/skills/* .claude/skills/
 python scripts/validate_skills.py
 ```
 
